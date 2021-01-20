@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthbar opdracht</title>
+    </head>
+    <body>
+        <meter min="0" max="100" low="33" high="66" optimum="80" value="100" id="health"></meter>      
+        <input type="button" value="attack!" id="attackButton" onclick="takeDamage()"></input>
+        <h1 id="text">..</h1>
+        
+        <script>
+            function takeDamage() {
+                document.getElementById("health").value -= "15";
+                if (health.value <= 0)
+                    document.getElementById("text").innerHTML = "good bye!";   
+
+            }   
+        </script>
+    </body>
+</html>
