@@ -12,7 +12,9 @@
         
         <script>
             function takeDamage() {
-                document.getElementById("health").value -= "15";
+                let health=document.getElementById("health");
+                console.log('hallo');
+                health.value -= "15";
                 if (health.value <= 0)
                     document.getElementById("text").innerHTML = "good bye!";   
 

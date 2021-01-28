@@ -28,11 +28,11 @@
     
     
     function makeThisSentence(){
-        let index = randomizer(arrayLength);
+        let index = randomizer(onderwerp.length);
         let woord1 = onderwerp[index];
-        index = randomizer(arrayLength);
+        index = randomizer(werkwoord.length);
         let woord2 = werkwoord[index];    
-        index = randomizer(arrayLength);
+        index = randomizer(restwoord.length);
         let woord3 = restwoord[index];
         let outputString = woord1 + " " + woord2 + " " + woord3;
         return outputString;

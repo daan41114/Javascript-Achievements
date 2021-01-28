@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScrollOnMe daan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onresize="myFunctionresize()">
+    <div id="textvak">
+      <h2 id="text">Scroll On Me</h2>
+    </div>
+
+    <p id="feature"></p>
+  </body>
+  <script>
+    document.getElementById("textvak").addEventListener("wheel", myFunction);
+    var h1 = document.getElementById("text");
+    function myFunction() {
+        h1.innerHTML += "!";
+    }
+  </script>
+</html>
